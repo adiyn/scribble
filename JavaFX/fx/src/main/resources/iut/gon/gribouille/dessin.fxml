@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="conteneurPane"  fx:controller="iut.gon.gribouille.controleurs.DessinController" style="-fx-background-color: #F0F0F0;"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <Canvas fx:id="dessin" id="Canvas"
+            onMousePressed="#onMousePress"
+            onMouseDragged="#onMouseDrag"
+            onMouseMoved="#onMouseMove"
+            onMouseReleased="#onMouseRelease"
+            height="380.0" width="530.0"/>
+</Pane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<MenuBar fx:controller="iut.gon.gribouille.controleurs.MenusController" xmlns="http://javafx.com/javafx/21.0.2"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <Menu mnemonicParsing="false" text="Dessin">
+        <MenuItem onAction="#onCharger" mnemonicParsing="false" text="Charger"/>
+        <MenuItem onAction="#onSauvegarder" mnemonicParsing="false" text="Sauvegarder"/>
+        <MenuItem onAction="#onExporter" mnemonicParsing="false" text="Exporter"/>
+        <SeparatorMenuItem mnemonicParsing="false"/>
+        <MenuItem onAction="#onQuitter" mnemonicParsing="false" text="Quitter"/>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Outils">
+        <Menu mnemonicParsing="false" text="Épaisseur">
+            <RadioMenuItem mnemonicParsing="false" selected="true" text="1">
+                <toggleGroup>
+                    <ToggleGroup fx:id="epaisseurGroup"/>
+                </toggleGroup>
+            </RadioMenuItem>
+            <RadioMenuItem mnemonicParsing="false" text="2" toggleGroup="$epaisseurGroup"/>
+            <RadioMenuItem mnemonicParsing="false" text="3" toggleGroup="$epaisseurGroup"/>
+            <RadioMenuItem mnemonicParsing="false" text="4" toggleGroup="$epaisseurGroup"/>
+            <RadioMenuItem mnemonicParsing="false" text="5" toggleGroup="$epaisseurGroup"/>
+            <RadioMenuItem mnemonicParsing="false" text="6" toggleGroup="$epaisseurGroup"/>
+            <RadioMenuItem mnemonicParsing="false" text="7" toggleGroup="$epaisseurGroup"/>
+            <RadioMenuItem mnemonicParsing="false" text="8" toggleGroup="$epaisseurGroup"/>
+            <RadioMenuItem mnemonicParsing="false" text="9" toggleGroup="$epaisseurGroup"/>
+        </Menu>
+        <RadioMenuItem mnemonicParsing="false" selected="true" text="Crayon">
+            <toggleGroup>
+                <ToggleGroup fx:id="outilGroup"/>
+            </toggleGroup>
+        </RadioMenuItem>
+        <RadioMenuItem mnemonicParsing="false" text="Étoile" toggleGroup="$outilGroup"/>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Aide">
+        <MenuItem onAction="#onAPropos" mnemonicParsing="false" text="A propos"/>
+    </Menu>
+</MenuBar>

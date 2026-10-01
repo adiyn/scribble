@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane fx:controller="iut.gon.gribouille.controleurs.StatutController" hgap="20.0" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="25.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <HBox alignment="CENTER_LEFT" spacing="5.0" GridPane.columnIndex="0">
+            <children>
+                <Label text="X :" />
+                <Label fx:id="labelX" text="0" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="5.0" GridPane.columnIndex="1">
+            <children>
+                <Label text="Y :" />
+                <Label fx:id="labelY" text="0" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="5.0" GridPane.columnIndex="2">
+            <children>
+                <Label text="Épaisseur :" />
+                <Label fx:id="labelEpaisseur" text="1" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="5.0" GridPane.columnIndex="3">
+            <children>
+                <Label text="Outil :" />
+                <Label fx:id="labelOutil" text="Crayon" />
+            </children>
+        </HBox>        <Label fx:id="labelCouleur" text="Couleur" GridPane.columnIndex="4" />
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+    </padding>
+</GridPane>
